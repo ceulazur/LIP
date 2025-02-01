@@ -1,0 +1,11 @@
+jose=1 e maria=2-> joao=3 e ana=4
+ana=4-> helena=5 e joana=6
+joao=3-> mario=7
+agora começa o horror
+mario=7 e helena=5 -> carlos=8
+
+entao:
+jose * maria = joao + ana
+ana * y = helena + joana
+joao * x = mario
+mario * helena = carlos
