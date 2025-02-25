@@ -31,12 +31,11 @@ adjacente(Y, X) :- aresta(X, Y).
 
 % ?- caminho( [0 , 1 , 2] ). ? Os vértices 0,1,2 formam um caminho?
 caminho([_]).
-caminho([H,H2 | T]) :- adjacente(H, H2), caminho([H2 | T]).
+caminho([Y,Y2 | L]) :- adjacente(Y, Y2), caminho([Y2 | L]).
 
 % grau( 1 , W ). ? Qual o grau do vértice 1?
-grau(1, W) :- total_nos(N), total_adj(1, W, N).
+grau(V, W) :- total_nos(N), total_adj(V, W, N).
 
-total_adj(1, 0, []).
-total_adj(1, W, [Y|L]):- adjacente(1, Y), total_adj(1, W1, L), W is W1 + 1.
-total_adj(1, W, [_|L]):- total_adj(1, W, L).
-
+total_adj(_, 0, []).
+total_adj(V, W, [Y|L]):- adjacente(V, Y), total_adj(V, W1, L), W is W1 + 1.
+total_adj(V, W, [_|L]):- total_adj(V, W, L).
