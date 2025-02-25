@@ -25,7 +25,6 @@ estoque utilizando alguma linguagem orientada a objetos. Não precisa utilizar b
      OBS.: A entrada de todas as questões é pelo teclado (entrada padrão). A única coisa impressa na tela deve ser o resultado. Qualquer impressão diferente do resultado, como por exemplo, “digite a entrada” ou “a saída é” será considerada resposta errada. Novamente, imprima apenas o resultado.
 
 ### 3. *Pasta de Prolog*: PROGRAMAÇÃO LÓGICA
-#### Cenário:
 #### 1. Utilizando Prolog implemente um grafo simples (por definição, não orientado), no qual se possa fazer perguntas sobre adjacências, graus e caminhos. Por exemplo:
    
          • ?- adjacente( 0 , 1 ). → O vértice 0 é adjacente ao vértice 1?
